@@ -2,6 +2,8 @@
 
 Makes it easy to set up a local directory for a [PicoCTF](https://picoctf.org/) challenge.
 
+![demo](./media/demo.gif)
+
 You need `nodejs` and `yarn` installed as prerequisites.
 
 ### Setup
@@ -93,7 +95,3 @@ cd caas
 ## you can now read the description via the readme.md
 less readme.md
 ```
-
-### Demo
-
-![demo](./media/demo.gif)
