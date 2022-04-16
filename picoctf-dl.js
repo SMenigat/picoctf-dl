@@ -28,7 +28,7 @@ const fetchJson = async (url) => {
       `https://play.picoctf.org/api/challenges/${challangeId}/instance/`
     );
     // create folder first
-    const newDir = sanitize(main.name.toLowerCase()).replace(" ", "-");
+    const newDir = sanitize(main.name.toLowerCase()).replaceAll(" ", "-");
     const dirPath = path.join(targetDir, newDir);
     if (!fs.existsSync(dirPath)) {
       fs.mkdirSync(dirPath);
