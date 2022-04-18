@@ -51,6 +51,7 @@ const fetchJson = async (url) => {
       ...(instance.hints.length > 0
         ? [`### Hints`, instance.hints.map((hint) => `- ${hint}`).join("\n")]
         : []),
+      "### Solution",
     ].join("\n\n");
     const readmePath = path.join(dirPath, "readme.md");
     fs.writeFileSync(readmePath, readme);
